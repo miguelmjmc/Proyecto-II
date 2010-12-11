@@ -63,6 +63,26 @@
 .ultimos_productos{
     height: 220px;
 }
-#quienes_somos:before{
-
+#quienes_somos{
+    margin-bottom: 100px;
+}
+#map-container{
+    width: 100%;
+    height: 800px;
+    margin: 0 0 0 -40px;
+    padding: 0;
+}
+#container_map{
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 0;
+    padding-left: 0;
+    width: 100%;
+    height: 800px;
+}
+#map{
+    height: 800px;
+}
+#donde_estamos{
+    margin-bottom: 100px;
 }
