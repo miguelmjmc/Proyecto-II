@@ -51,5 +51,18 @@
 .center{
     width: 100%;
 }
+.green{
+    color:#1abc9c;
+}
+.logo_footer{
+    height: 50px;
+}
+.imagen_productos{
+    height: 220px;
+}
+.ultimos_productos{
+    height: 220px;
+}
+#quienes_somos:before{
 
-
+}
