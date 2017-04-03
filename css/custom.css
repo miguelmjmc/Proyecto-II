@@ -107,3 +107,6 @@
     float: left !important;
 }
 
+.bd{
+    border-top: 1px !important;
+}
