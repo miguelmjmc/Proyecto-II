@@ -408,15 +408,15 @@
 												<td class="tm">precio</td>
 												<td class="tm">
 													<div class="box-tools pull-right bt">
-														<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-eye"></i>
+														<button type="button" class="btn btn-box-tool" data-id="1" data-operation="ver" data-widget="collapse"><i class="fa fa-eye"></i>
 														</button>
 													</div>
 													<div class="box-tools pull-right bt">
-														<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-pencil"></i>
+														<button type="button" class="btn btn-box-tool" data-id="1" data-operation="editar" data-widget="collapse"><i class="fa fa-pencil"></i>
 														</button>
 													</div>
 													<div class="box-tools pull-right bt">
-														<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-close"></i>
+														<button type="button" class="btn btn-box-tool" data-id="1" data-operation="eliminar" data-widget="collapse"><i class="fa fa-close"></i>
 														</button>
 													</div>
 												</td>
@@ -425,7 +425,7 @@
 										<!-- /.box-tools -->
 									</div>
 									<!-- /.box-header -->
-									<div class="box-body">
+									<div id="box-widget-ver-1" class="box-body">
 
 										aqui mostrar todos los datos
 										en construccion!!!!!!
@@ -437,7 +437,7 @@
 
 
 
-									<div class="box-body">
+									<div id="box-widget-editar-1" class="box-body">
 										<div class="border">
 											<div class="row">
 												<div class="box box-info bsc">
@@ -560,7 +560,7 @@
 
 
 
-									<div class="box-body">
+									<div id="box-widget-eliminar-1" class="box-body">
 
 										<div class="border">
 											<div class="row">
@@ -625,15 +625,15 @@
 											<td class="tm">precio</td>
 											<td class="tm">
 												<div class="box-tools pull-right bt">
-													<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-eye"></i>
+													<button type="button" class="btn btn-box-tool" data-widget="collapse"  data-operation="ver" data-id="2"><i class="fa fa-eye"></i>
 													</button>
 												</div>
 												<div class="box-tools pull-right bt">
-													<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-pencil"></i>
+													<button type="button" class="btn btn-box-tool"   data-widget="collapse" data-operation="editar" data-id="2"><i class="fa fa-pencil"></i>
 													</button>
 												</div>
 												<div class="box-tools pull-right bt">
-													<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-close"></i>
+													<button type="button" class="btn btn-box-tool"  data-widget="collapse"  data-operation="eliminar" data-id="2"><i class="fa fa-close"></i>
 													</button>
 												</div>
 											</td>
@@ -645,19 +645,14 @@
 
 
 
-								<div class="box-body">
+								<div id="box-widget-ver-2" class="box-body">
 
 									aqui mostrar todos los datos
 									en construccion!!!!!!
 
 								</div>
 
-
-
-
-
-
-								<div class="box-body">
+								<div id="box-widget-editar-2" class="box-body">
 									<div class="border">
 										<div class="row">
 											<div class="box box-info bsc">
@@ -765,22 +760,7 @@
 									</div>
 								</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-								<div class="box-body">
+								<div id="box-widget-eliminar-2" class="box-body">
 
 									<div class="border">
 										<div class="row">
@@ -1112,5 +1092,29 @@
 	<!-- AdminLTE for demo purposes -->
 	<script src="dist/js/demo.js"></script>
 </div>
+
+<script>
+	$( ".btn-box-tool" ).click(function() {
+		var id = $(this).data("id")
+		var operation = $(this).data("operation")
+		if(operation == "ver"){
+			$("#box-widget-ver-" + id).removeClass("hidden")
+			$("#box-widget-editar-" + id).addClass("hidden")
+			$("#box-widget-eliminar-" + id).addClass("hidden")
+		}
+		else if(operation == "editar"){
+			$("#box-widget-ver-" + id).addClass("hidden")
+			$("#box-widget-editar-" + id).removeClass("hidden")
+			$("#box-widget-eliminar-" + id).addClass("hidden")
+		}
+		else if(operation == "eliminar"){
+			$("#box-widget-ver-" + id).addClass("hidden")
+			$("#box-widget-editar-" + id).addClass("hidden")
+			$("#box-widget-eliminar-" + id).removeClass("hidden")
+		}
+	});
+</script>
+
+
 </body>
 </html>
