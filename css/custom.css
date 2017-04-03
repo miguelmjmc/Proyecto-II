@@ -86,3 +86,24 @@
 #donde_estamos{
     margin-bottom: 100px;
 }
+.sm{
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 1920px) {
+    .ap{
+        margin-right: auto;
+        margin-left: 0;
+        width: 100%;
+        max-width: 300px;
+
+    }
+}
+.tm{
+    width: 25%;
+}
+.bt{
+    float: left !important;
+}
+
