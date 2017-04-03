@@ -101,7 +101,7 @@
     }
 }
 .tm{
-    width: 25%;
+    width: 20%;
 }
 .bt{
     float: left !important;
@@ -109,4 +109,18 @@
 
 .bd{
     border-top: 1px !important;
+}
+.mr{
+  float: right;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.bsc{
+    border-top-color: white !important;
+}
+.border{
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    margin: 0 1%;
+    padding: 15px;
 }

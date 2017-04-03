@@ -230,6 +230,11 @@
 
 
 
+
+
+
+
+
 	<!-- Content Wrapper. Contains page content -->
 	<div class="content-wrapper">
 		<!-- Content Header (Page header) -->
@@ -243,6 +248,116 @@
 			</ol>
 		</section>
 
+
+
+
+
+		<section class="content-header">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="box box-default collapsed-box">
+						<div class="box-header with-border">
+							<h3 class="box-title">Añadir Departamento</h3>
+
+							<div class="box-tools pull-right">
+								<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-plus"></i>
+								</button>
+							</div>
+							<!-- /.box-tools -->
+						</div>
+						<!-- /.box-header -->
+						<div class="box-body">
+							<table>
+								<tr>
+									<td>producto</td>
+									<td>precio</td>
+									<td>stock</td>
+									<td>opciones</td>
+								</tr>
+							</table>
+						</div>
+						<!-- /.box-body -->
+					</div>
+					<!-- /.box -->
+				</div>
+				<!-- /.col -->
+				<div class="col-md-4">
+					<div class="box box-default collapsed-box">
+						<div class="box-header with-border">
+							<h3 class="box-title">Añadir Marca</h3>
+
+							<div class="box-tools pull-right">
+								<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-plus"></i>
+								</button>
+							</div>
+							<!-- /.box-tools -->
+						</div>
+						<!-- /.box-header -->
+						<div class="box-body">
+							<table>
+								<tr>
+									<td>producto</td>
+									<td>precio</td>
+									<td>stock</td>
+									<td>opciones</td>
+								</tr>
+							</table>
+						</div>
+						<!-- /.box-body -->
+					</div>
+					<!-- /.box -->
+				</div>
+				<!-- /.col -->
+				<div class="col-md-4">
+					<div class="box box-default collapsed-box">
+						<div class="box-header with-border">
+							<h3 class="box-title">Añadir Vehiculo</h3>
+
+							<div class="box-tools pull-right">
+								<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-plus"></i>
+								</button>
+							</div>
+							<!-- /.box-tools -->
+						</div>
+						<!-- /.box-header -->
+						<div class="box-body">
+							<table>
+								<tr>
+									<td>producto</td>
+									<td>precio</td>
+									<td>stock</td>
+									<td>opciones</td>
+								</tr>
+							</table>
+						</div>
+						<!-- /.box-body -->
+					</div>
+					<!-- /.box -->
+				</div>
+				<!-- /.col -->
+			</div>
+			<!-- /.row -->
+		</section>
+		<!-- /.content -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		<!-- Main content -->
 		<section class="content">
 			<div class="row">
@@ -251,12 +366,12 @@
 						<div class="box-header">
 							<div class="row">
 								<div class="col-xs-12 col-md-10">
-									<h3 class="box-title">Responsive Hover Table</h3>
+									<h3 class="box-title">Productos</h3>
 								</div>
 								<div class="col-xs-12 col-md-2">
 									<div class="box-tools ap">
 										<div class="input-group input-group-sm sm ap">
-											<input type="text" name="table_search" class="form-control pull-right" placeholder="Search">
+											<input type="text" name="table_search" class="form-control pull-right" placeholder="Buscar">
 
 											<div class="input-group-btn">
 												<button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
@@ -271,9 +386,10 @@
 						<div class="box-body table-responsive no-padding">
 							<table class="table table-hover">
 								<tr>
-									<th class="tm">ID</th>
-									<th class="tm">User</th>
-									<th class="tm">Date</th>
+									<th class="tm">Codigo</th>
+									<th class="tm">Nombre</th>
+									<th class="tm">Stock</th>
+									<th class="tm">Precio</th>
 									<th class="tm">Opciones</th>
 								</tr>
 							</table>
@@ -288,6 +404,7 @@
 											<tr>
 												<td class="tm">215</td>
 												<td class="tm">producto</td>
+												<td class="tm">precio</td>
 												<td class="tm">precio</td>
 												<td class="tm">
 													<div class="box-tools pull-right bt">
@@ -309,16 +426,172 @@
 									</div>
 									<!-- /.box-header -->
 									<div class="box-body">
-										primero!!!
-									</div>
-									<!-- /.box-body -->
-									<div class="box-body">
-										segundo!!!
-									</div>
-									<div class="box-body">
-										tercero!!!
+
+										aqui mostrar todos los datos
+										en construccion!!!!!!
+
 									</div>
 
+
+
+
+
+
+									<div class="box-body">
+										<div class="border">
+											<div class="row">
+												<div class="box box-info bsc">
+													<div class="box-header with-border">
+														<h3 class="box-title">Edicion de Producto</h3>
+													</div>
+													<!-- /.box-header -->
+													<!-- form start -->
+													<form class="form-horizontal">
+														<!-- Horizontal Form -->
+														<div class="col-md-6">
+
+
+
+															<div class="box-body">
+																<div class="form-group">
+																	<label for="" class="col-sm-2 control-label">Codigo</label>
+
+																	<div class="col-sm-10">
+																		<input type="text" class="form-control" id="" placeholder="k8251">
+																	</div>
+																</div>
+																<div class="form-group">
+																	<label for="" class="col-sm-2 control-label">Nombre</label>
+
+																	<div class="col-sm-10">
+																		<input type="password" class="form-control" id="" placeholder="muñon">
+																	</div>
+																</div>
+
+
+
+
+
+
+																<div class="form-group">
+																	<label for="" class="col-sm-2 control-label">Marca</label>
+																	<div class="col-sm-10">
+																		<select class="form-control">
+																			<option>Moog</option>
+																			<option>Tinken</option>
+																			<option>Monroe</option>
+																			<option>Bosch</option>
+																		</select>
+																	</div>
+																</div>
+
+																<div class="form-group">
+																	<label for="" class="col-sm-2 control-label">Departamento</label>
+																	<div class="col-sm-10">
+																		<select class="form-control">
+																			<option>Tren Delantero</option>
+																			<option>Accesorios</option>
+																			<option>Partes Electricas</option>
+																			<option>Frenos</option>
+																		</select>
+																	</div>
+																</div>
+																<div class="form-group">
+																	<label for="" class="col-sm-2 control-label">Stock</label>
+
+																	<div class="col-sm-10">
+																		<input type="number" class="form-control" id="" placeholder="41">
+																	</div>
+																</div>
+																<div class="form-group">
+																	<label for="" class="col-sm-2 control-label">Precio</label>
+
+																	<div class="col-sm-10">
+																		<input type="text" class="form-control" id="" placeholder="12500">
+																	</div>
+																</div>
+																<div class="form-group">
+																	<label for="" class="col-sm-2 control-label">Descripcion</label>
+
+																	<div class="col-sm-10">
+																		<textarea class="form-control" rows="5" id="" placeholder="descripcion del producto"></textarea>
+																	</div>
+																</div>
+
+															</div>
+															<!-- /.box-body -->
+
+
+														</div>
+														<div class="col-md-6">
+															aqui un select multiple con el tipo de vehiculo y la carga de las imagenes
+															en construccion!!!!
+														</div>
+
+
+														<!-- /.box -->
+														<div class="col-md-12 col-xs-12">
+															<div class="box-footer">
+																<button type="submit" class="btn btn-info pull-right ">Guardar</button>
+																<button type="submit" class="btn btn-default mr">Cancelar</button>
+
+															</div>
+															<!-- /.box-footer -->
+														</div>
+													</form>
+
+												</div>
+											</div>
+										</div>
+									</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+									<div class="box-body">
+
+										<div class="border">
+											<div class="row">
+												<div class="box box-info bsc">
+													<div class="box-header with-border">
+														<h3 class="box-title">Eliminar Producto</h3>
+													</div>
+													<!-- /.box-header -->
+													<!-- form start -->
+													<form class="form-horizontal">
+														<div class="col-md-12 col-xs-12">
+															<div class="box-footer">
+																<button type="submit" class="btn btn-info pull-right ">Eliminar</button>
+																<button type="submit" class="btn btn-default mr">Cancelar</button>
+
+															</div>
+															<!-- /.box-footer -->
+														</div>
+													</form>
+
+												</div>
+											</div>
+										</div>
+
+
+
+
+
+
+
+									</div>
 									<!-- /.box-body -->
 								</div>
 								<!-- /.box -->
@@ -326,12 +599,29 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 							<div class="box box-default collapsed-box sm bd">
-								<div class="box-header with-border sm">
+								<div class="box-header with-border sm ">
 									<table class="table table-hover sm">
 										<tr>
 											<td class="tm">215</td>
 											<td class="tm">producto</td>
+											<td class="tm">precio</td>
 											<td class="tm">precio</td>
 											<td class="tm">
 												<div class="box-tools pull-right bt">
@@ -352,17 +642,176 @@
 									<!-- /.box-tools -->
 								</div>
 								<!-- /.box-header -->
+
+
+
 								<div class="box-body">
-									primero!!!
-								</div>
-								<!-- /.box-body -->
-								<div class="box-body">
-									segundo!!!
-								</div>
-								<div class="box-body">
-									tercero!!!
+
+									aqui mostrar todos los datos
+									en construccion!!!!!!
+
 								</div>
 
+
+
+
+
+
+								<div class="box-body">
+									<div class="border">
+										<div class="row">
+											<div class="box box-info bsc">
+												<div class="box-header with-border">
+													<h3 class="box-title">Edicion de Producto</h3>
+												</div>
+												<!-- /.box-header -->
+												<!-- form start -->
+												<form class="form-horizontal">
+													<!-- Horizontal Form -->
+													<div class="col-md-6">
+
+
+
+														<div class="box-body">
+															<div class="form-group">
+																<label for="" class="col-sm-2 control-label">Codigo</label>
+
+																<div class="col-sm-10">
+																	<input type="text" class="form-control" id="" placeholder="k8251">
+																</div>
+															</div>
+															<div class="form-group">
+																<label for="" class="col-sm-2 control-label">Nombre</label>
+
+																<div class="col-sm-10">
+																	<input type="password" class="form-control" id="" placeholder="muñon">
+																</div>
+															</div>
+
+
+
+
+
+
+															<div class="form-group">
+																<label for="" class="col-sm-2 control-label">Marca</label>
+																<div class="col-sm-10">
+																	<select class="form-control">
+																		<option>Moog</option>
+																		<option>Tinken</option>
+																		<option>Monroe</option>
+																		<option>Bosch</option>
+																	</select>
+																</div>
+															</div>
+
+															<div class="form-group">
+																<label for="" class="col-sm-2 control-label">Departamento</label>
+																<div class="col-sm-10">
+																	<select class="form-control">
+																		<option>Tren Delantero</option>
+																		<option>Accesorios</option>
+																		<option>Partes Electricas</option>
+																		<option>Frenos</option>
+																	</select>
+																</div>
+															</div>
+															<div class="form-group">
+																<label for="" class="col-sm-2 control-label">Stock</label>
+
+																<div class="col-sm-10">
+																	<input type="number" class="form-control" id="" placeholder="41">
+																</div>
+															</div>
+															<div class="form-group">
+																<label for="" class="col-sm-2 control-label">Precio</label>
+
+																<div class="col-sm-10">
+																	<input type="text" class="form-control" id="" placeholder="12500">
+																</div>
+															</div>
+															<div class="form-group">
+																<label for="" class="col-sm-2 control-label">Descripcion</label>
+
+																<div class="col-sm-10">
+																	<textarea class="form-control" rows="5" id="" placeholder="descripcion del producto"></textarea>
+																</div>
+															</div>
+
+														</div>
+														<!-- /.box-body -->
+
+
+													</div>
+													<div class="col-md-6">
+														aqui un select multiple con el tipo de vehiculo y la carga de las imagenes
+														en construccion!!!!
+													</div>
+
+
+													<!-- /.box -->
+													<div class="col-md-12 col-xs-12">
+														<div class="box-footer">
+															<button type="submit" class="btn btn-info pull-right ">Guardar</button>
+															<button type="submit" class="btn btn-default mr">Cancelar</button>
+
+														</div>
+														<!-- /.box-footer -->
+													</div>
+												</form>
+
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+								<div class="box-body">
+
+									<div class="border">
+										<div class="row">
+											<div class="box box-info bsc">
+												<div class="box-header with-border">
+													<h3 class="box-title">Eliminar Producto</h3>
+												</div>
+												<!-- /.box-header -->
+												<!-- form start -->
+												<form class="form-horizontal">
+													<div class="col-md-12 col-xs-12">
+														<div class="box-footer">
+															<button type="submit" class="btn btn-info pull-right ">Eliminar</button>
+															<button type="submit" class="btn btn-default mr">Cancelar</button>
+
+														</div>
+														<!-- /.box-footer -->
+													</div>
+												</form>
+
+											</div>
+										</div>
+									</div>
+
+
+
+
+
+
+
+								</div>
 								<!-- /.box-body -->
 							</div>
 							<!-- /.box -->
@@ -371,46 +820,13 @@
 
 
 
-							<div class="box box-default collapsed-box sm bd">
-								<div class="box-header with-border sm">
-									<table class="table table-hover sm">
-										<tr>
-											<td class="tm">215</td>
-											<td class="tm">producto</td>
-											<td class="tm">precio</td>
-											<td class="tm">
-												<div class="box-tools pull-right bt">
-													<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-eye"></i>
-													</button>
-												</div>
-												<div class="box-tools pull-right bt">
-													<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-pencil"></i>
-													</button>
-												</div>
-												<div class="box-tools pull-right bt">
-													<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-close"></i>
-													</button>
-												</div>
-											</td>
-										</tr>
-									</table>
-									<!-- /.box-tools -->
-								</div>
-								<!-- /.box-header -->
-								<div class="box-body">
-									primero!!!
-								</div>
-								<!-- /.box-body -->
-								<div class="box-body">
-									segundo!!!
-								</div>
-								<div class="box-body">
-									tercero!!!
-								</div>
 
-								<!-- /.box-body -->
-							</div>
-							<!-- /.box -->
+
+
+
+
+
+
 
 
 
@@ -496,45 +912,6 @@
 
 
 
-	<!-- Content Wrapper. Contains page content -->
-	<div class="content-wrapper">
-		<!-- Content Header (Page header) -->
-		<!-- Main content -->
-		<section class="content">
-			<div class="row">
-				<div class="col-md-3">
-					<div class="box box-default collapsed-box">
-						<div class="box-header with-border">
-							<h3 class="box-title">Expandable</h3>
-
-							<div class="box-tools pull-right">
-								<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-plus"></i>
-								</button>
-							</div>
-							<!-- /.box-tools -->
-						</div>
-						<!-- /.box-header -->
-						<div class="box-body">
-							<table>
-								<tr>
-									<td>producto</td>
-									<td>precio</td>
-									<td>stock</td>
-									<td>opciones</td>
-								</tr>
-							</table>
-						</div>
-						<!-- /.box-body -->
-					</div>
-					<!-- /.box -->
-				</div>
-				<!-- /.col -->
-			</div>
-			<!-- /.row -->
-		</section>
-		<!-- /.content -->
-	</div>
-	<!-- /.content-wrapper -->
 
 
 
