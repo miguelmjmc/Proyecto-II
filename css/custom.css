@@ -124,3 +124,7 @@
     margin: 0 1%;
     padding: 15px;
 }
+.dt{
+    max-width: 600px;
+    margin: 0 auto;
+}
