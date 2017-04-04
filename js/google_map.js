@@ -9,15 +9,15 @@ function init_map() {
         scrollwheel: false
     };
 
+        var mapElement = document.getElementById('map-container');
+
+    var myMap = new google.maps.Map(mapElement, var_mapoptions);
+
+
     var var_marker = new google.maps.Marker({
         position: var_location,
-        map: var_map,
-        title:"Venice"});
-
-    var var_map = new google.maps.Map(document.getElementById("map-container"),
-        var_mapoptions);
-
-    var_marker.setMap(var_map);
+        map: myMap,
+        title:"Titulo del marcador"});
 
 }
 
