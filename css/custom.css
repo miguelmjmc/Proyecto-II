@@ -83,12 +83,9 @@
 #map{
     height: 800px;
 }
-#donde_estamos{
-    margin-bottom: 100px;
-}
 .sm{
-    margin: 0;
-    padding: 0;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 @media (max-width: 1920px) {
@@ -127,4 +124,17 @@
 .dt{
     max-width: 600px;
     margin: 0 auto;
+}
+.loquequiera{
+    background-color: red;
+}
+.product-widget-area{
+    padding-bottom: 0;
+}
+.am{
+    padding-top: 70px;
+    padding-bottom: 80px;
+}
+.amm{
+    padding-top: 100px;
 }
