@@ -30,7 +30,6 @@
     <script src="respond.min.js"></script>
     <![endif]-->
 </head>
-</head>
 <body>
 <div class="header-area">
     <div class="container">
@@ -38,7 +37,9 @@
             <div class="col-md-12">
                 <div class="user-menu">
                     <ul>
-                        <li><a href="#"><i class="fa fa-user"></i> Mi Cuenta</a></li>
+                        <li>
+                            <a href="construccion.html"><i class="fa fa-user"></i> Mi Cuenta</a>
+                        </li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle"  data-toggle="dropdown"><i class="fa fa-user"></i>Login<span class="caret"></span></a>
                             <ul id="login-dp" class="dropdown-menu">
@@ -56,7 +57,7 @@
                                                     <div class="help-block text-right"><a href="">Olvido su contraseña?</a></div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <button type="submit" class="btn btn-primary btn-block">Iniciar Sesion</button>
+                                                    <button type="submit" class="btn btn-primary btn-block"  formaction="administrador/index.html">Iniciar Sesion</button>
                                                 </div>
                                             </form>
                                         </div>
@@ -79,12 +80,12 @@
         <div class="row">
             <div class="col-sm-6">
                 <div class="logo">
-                    <h1><a href="index.html">Representaciones<span> Jemaro.CA</span></a></h1>
+                    <h1><a href="index.html">Representaciones<span> Jemaro.C.A</span></a></h1>
                 </div>
             </div>
             <div class="col-sm-6">
                 <div class="shopping-item">
-                    <a href="cart.html">Carrito - <span class="cart-amunt">Bs800</span> <i class="fa fa-shopping-cart"></i> <span class="product-count">5</span></a>
+                    <a href="cart.html">Carrito - <span class="cart-amunt">Bs 800</span> <i class="fa fa-shopping-cart"></i> <span class="product-count">5</span></a>
                 </div>
             </div>
         </div>
@@ -104,11 +105,12 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.html">Inicio</a></li>
+                    <li class="active"><a href="index.html#inicio">Inicio</a></li>
                     <li><a href="index.html#quienes_somos">Quienes Somos</a></li>
-                    <li><a href="shop.html">Productos</a></li>
-                    <li><a href="#">Donde Estamos</a></li>
+                    <li><a href="index.html#marcas"> Nuestros Proveedores</a></li>
+                    <li><a href="index.html#donde_estamos">Donde Estamos</a></li>
                     <li><a href="index.html#contactos">Contactos</a></li>
+                    <li><a href="index.html#shop.html">Productos</a> </li>
                 </ul>
             </div>
         </div>
@@ -121,7 +123,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="product-bit-title text-center">
-                        <h2>Tienda</h2>
+                        <h2>Detalles Del Producto</h2>
                     </div>
                 </div>
             </div>
@@ -133,6 +135,7 @@
         <div class="container">
             <div class="row">
 
+                <!-- modifique la imagen -->
 
                 <div class="col-md-12">
                     <div class="product-content-right">
@@ -140,7 +143,7 @@
                             <div class="col-sm-6">
                                 <div class="product-images">
                                     <div class="product-main-img">
-                                        <img src="img/product-1.jpg" alt="">
+                                        <img src="img/product-2.jpg" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -156,7 +159,7 @@
                                         <div class="quantity">
                                             <input type="number" size="4" class="input-text qty text" title="Qty" value="1" name="quantity" min="1" step="1">
                                         </div>
-                                        <button class="add_to_cart_button" type="submit">Añadir Al Carrito</button>
+                                        <button class="add_to_cart_button" type="submit" formaction="cart1.html"> Añadir Al Carrito</button>
                                     </form>   
                                     
                                     <div class="product-inner-category">
@@ -170,7 +173,14 @@
                                         <div class="tab-content">
                                             <div role="tabpanel" class="tab-pane fade in active" id="home">
                                                 <h2>Descripcion Del Producto </h2>
-                                                <p>Sirve para bombiar.. no crees obvio.</p>
+                                                <p>BOMBA DE AGUA
+                                                    ORIGINAL
+                                                    CODIGO: 252-888
+                                                    Marca: Promaster
+                                                    Código del Repuesto: 96872702
+                                                    Incluye la Empacadura
+                                                    Repuesto Totalmente NUEVO
+                                                    TODOS LOS MODELOS.</p>
                                             </div>
                                             <div role="tabpanel" class="tab-pane fade" id="profile">
                                                 <h2>Comentarios</h2>
@@ -208,11 +218,11 @@
                                         <img src="img/product-1.jpg" alt="" class="imagen_productos">
                                         <div class="product-hover">
                                             <a href="" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Añadir</a>
-                                            <a href="" class="view-details-link"><i class="fa fa-link"></i> Ver Detalles</a>
+                                            <a href="single-product1amort.html" class="view-details-link"><i class="fa fa-link"></i> Ver Detalles</a>
                                         </div>
                                     </div>
 
-                                    <h2><a href="">Amortiguador</a></h2>
+                                    <h2><a href="single-product1amort.html">Amortiguador</a></h2>
 
                                     <div class="product-carousel-price">
                                         <ins>Bs9000.00</ins> <del>Bs9500.00</del>
@@ -222,8 +232,8 @@
                                     <div class="product-f-image">
                                         <img src="img/product-2.jpg" alt="" class="imagen_productos">
                                         <div class="product-hover">
-                                            <a href="" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Añaadir</a>
-                                            <a href="" class="view-details-link"><i class="fa fa-link"></i> Ver Detalles</a>
+                                            <a href="" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Añadir</a>
+                                            <a href="single-product.html" class="view-details-link"><i class="fa fa-link"></i> Ver Detalles</a>
                                         </div>
                                     </div>
 
@@ -237,11 +247,11 @@
                                         <img src="img/product-3.jpg" alt="">
                                         <div class="product-hover">
                                             <a href="" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Añadir</a>
-                                            <a href="" class="view-details-link"><i class="fa fa-link"></i> Ver Detalles</a>
+                                            <a href="single-product2corea.html" class="view-details-link"><i class="fa fa-link"></i> Ver Detalles</a>
                                         </div>
                                     </div>
 
-                                    <h2><a href="">Correa De Tiempo</a></h2>
+                                    <h2><a href="single-product2corea.html">Correa De Tiempo</a></h2>
 
                                     <div class="product-carousel-price">
                                         <ins>Bs7500.00</ins> <del>Bs8000.00</del>
@@ -252,11 +262,11 @@
                                         <img src="img/product-4.jpg" alt="">
                                         <div class="product-hover">
                                             <a href="" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Añadir</a>
-                                            <a href="" class="view-details-link"><i class="fa fa-link"></i> Ver Detalles</a>
+                                            <a href="single-product3bombi.html" class="view-details-link"><i class="fa fa-link"></i> Ver Detalles</a>
                                         </div>
                                     </div>
 
-                                    <h2><a href="">Bobillo</a></h2>
+                                    <h2><a href="single-product3bombi.html">Bobillo</a></h2>
 
                                     <div class="product-carousel-price">
                                         <ins>Bs8000.00</ins> <del>Bs8500.00</del>
