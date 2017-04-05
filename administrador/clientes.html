@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Productos</title>
+	<title>Clientes</title>
 	<!-- Tell the browser to be responsive to screen width -->
 	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 	<!-- Bootstrap 3.3.6 -->
@@ -186,12 +186,12 @@
 		<!-------------------------------------------------------------------------------------------------------------- main content header -->
 		<section class="content-header">
 			<h1>
-				Productos
+				Clientes
 				<small>Resumen</small>
 			</h1>
 			<ol class="breadcrumb">
 				<li><a href="index.html"><i class="glyphicon glyphicon-home"></i> Inicio ></a></li>
-				<li><a href="productos.html"><i class="glyphicon glyphicon-th-large"></i> Productos</a></li>
+				<li><a href="clientes.html"><i class="glyphicon glyphicon-user"></i> Clientes</a></li>
 			</ol>
 		</section>
 		<!-------------------------------------------------------------------------------------------------------------- /.main content header>
@@ -204,7 +204,7 @@
 						<div class="box-header">
 							<div class="row">
 								<div class="col-xs-12 col-md-10">
-									<h3 class="box-title">Productos</h3>
+									<h3 class="box-title">Clientes</h3>
 								</div>
 								<div class="col-xs-12 col-md-2">
 									<div class="box-tools ap">
@@ -220,7 +220,7 @@
 									<div class="box box-default collapsed-box mp">
 										<div class="row mp sp">
 											<div class="box-tools pull-right col-md-12">
-												<button type="button" title="Añadir Producto" class="btn btn-info pull-right" data-id="2" data-operation="editar" data-widget="collapse">Nuevo Producto</button>
+												<button type="button" title="Añadir Cliente" class="btn btn-info pull-right" data-id="2" data-operation="editar" data-widget="collapse">Nuevo Cliente</button>
 											</div>
 										</div>
 										<div id="box-widget-editar-2" class="box-body">
@@ -229,103 +229,66 @@
 													<div class="box box-info bsc">
 														<!---------------------------------------------------------------------- content row tablet collapsable button 2 header -->
 														<div class="box-header with-border">
-															<h3 class="box-title">Nuevo Producto</h3>
+															<h3 class="box-title">Nuevo Cliente</h3>
 														</div>
 														<!---------------------------------------------------------------------- /.content row tablet collapsable button 2 header -->
 														<!---------------------------------------------------------------------- content row tablet collapsable button 2 body -->
 														<div class="box-body">
 															<form class="form-horizontal">
 																<div class="col-md-6">
-
-																	<div class="form-group">
-																		<label for="" class="col-sm-2 control-label">Codigo</label>
-
-																		<div class="col-sm-10">
-																			<input type="text" class="form-control" id="" placeholder="ingrese el codigo">
-																		</div>
-																	</div>
 																	<div class="form-group">
 																		<label for="" class="col-sm-2 control-label">Nombre</label>
-
 																		<div class="col-sm-10">
 																			<input type="text" class="form-control" id="" placeholder="ingrese el nombre">
 																		</div>
 																	</div>
 																	<div class="form-group">
-																		<label for="" class="col-sm-2 control-label">Marca</label>
+																		<label for="" class="col-sm-2 control-label">Apellido</label>
 																		<div class="col-sm-10">
-																			<select class="form-control" onchange="habilitar1(this.value);">
-																				<option value="">Seleccione uno</option>
-																				<option>Moog</option>
-																				<option>Tinken</option>
-																				<option>Monroe</option>
-																				<option>Bosch</option>
-																				<option value="1">Nueva marca</option>
-																			</select>
-																		</div>
-																	</div>
-																	<div class="form-group" id="prueba1" style="display: none">
-																		<label for="" class="col-sm-2 control-label"></label>
-																		<div class="col-sm-10">
-																			<input type="text" class="form-control" id="" placeholder="ingrese nueva marca">
+																			<input type="text" class="form-control" id="" placeholder="ingrese el apellido">
 																		</div>
 																	</div>
 																	<div class="form-group">
-																		<label for="" class="col-sm-2 control-label">Departamento</label>
+																		<label for="" class="col-sm-2 control-label">Cedula</label>
 																		<div class="col-sm-10">
-																			<select class="form-control" onchange="habilitar2(this.value);">
-																				<option>Seleccione uno</option>
-																				<option>Tren delantero</option>
-																				<option>Accesorios</option>
-																				<option>Partes electricas</option>
-																				<option>Frenos</option>
-																				<option value="1">Nuevo departamento</option>
-																			</select>
-																		</div>
-																	</div>
-																	<div class="form-group" id="prueba2" style="display: none">
-																		<label for="" class="col-sm-2 control-label"></label>
-																		<div class="col-sm-10">
-																			<input type="text" class="form-control" id="" placeholder="ingrese nuevo departamento">
+																			<input type="text" class="form-control" id="" placeholder="ingrese la cedula">
 																		</div>
 																	</div>
 																	<div class="form-group">
-																		<label for="" class="col-sm-2 control-label">Vehiculos</label>
+																		<label for="" class="col-sm-2 control-label">Email</label>
+																		<div class="col-sm-10">
+																			<input type="email" class="form-control" id="" placeholder="ingrese el correo">
+																		</div>
+																	</div>
+																	<div class="form-group">
+																		<label for="" class="col-sm-2 control-label">Contraseña</label>
+																		<div class="col-sm-10">
+																			<input type="password" class="form-control" id="" placeholder="ingrese la contraseña">
+																		</div>
+																	</div>
 
-																		<div class="col-sm-10">
-																			<input type="text" class="form-control" id="" placeholder="ingrese vehiculos">
-																		</div>
-																	</div>
 																</div>
 																<div class="col-md-6">
 																	<div class="form-group">
-																		<label for="" class="col-sm-2 control-label">Stock</label>
-
+																		<label for="" class="col-sm-2 control-label">Direccion</label>
 																		<div class="col-sm-10">
-																			<input type="number" class="form-control" id="" placeholder="ingrese el stock">
+																			<input type="text" class="form-control" id="" placeholder="ingrese la direccion">
 																		</div>
 																	</div>
 																	<div class="form-group">
-																		<label for="" class="col-sm-2 control-label">Precio</label>
-
+																		<label for="" class="col-sm-2 control-label">Telefono 1</label>
 																		<div class="col-sm-10">
-																			<input type="number" step="0.01" class="form-control" id="" placeholder="ingrese el precio">
+																			<input type="number" class="form-control" id="" placeholder="ingrese el telefono 1">
 																		</div>
 																	</div>
 																	<div class="form-group">
-																		<label for="" class="col-sm-2 control-label">Descripcion</label>
-
+																		<label for="" class="col-sm-2 control-label">Telefono 2</label>
 																		<div class="col-sm-10">
-																			<textarea class="form-control" rows="5" id="" placeholder="amortiguador tracero para caprice"></textarea>
-																		</div>
-																	</div>
-																	<div class="form-group">
-																		<label for="" class="col-sm-2 control-label">Cargar imagen</label>
-																		<div class="col-sm-10">
-																			<input  id="input-24" name="input24[]" type="file" multiple>
+																			<input type="number" class="form-control" id="" placeholder="ingrese el telefono 2">
 																		</div>
 																	</div>
 																</div>
+
 																<!---------------------------------------------------------------------- content row tablet collapsable button 2 button -->
 																<div class="col-md-12 col-xs-12">
 																	<div class="box-footer">
@@ -353,10 +316,10 @@
 							<!------------------------------------------------------------------------------------------ tablet header-->
 							<table class="table table-hover">
 								<tr>
-									<th class="tm">Codigo</th>
+									<th class="tm">Cedula</th>
 									<th class="tm">Nombre</th>
-									<th class="tm">Stock</th>
-									<th class="tm">Precio</th>
+									<th class="tm">Apellido</th>
+									<th class="tm">Email</th>
 									<th class="tm">Opciones</th>
 								</tr>
 							</table>
@@ -367,10 +330,10 @@
 								<div class="box-header with-border sm">
 									<table class="table table-hover sm">
 										<tr>
-											<td class="tm">3041</td>
-											<td class="tm">amortiguador</td>
-											<td class="tm">41</td>
-											<td class="tm">12500</td>
+											<td class="tm">12345</td>
+											<td class="tm">Luis</td>
+											<td class="tm">Gonzales</td>
+											<td class="tm">luis@mail.com</td>
 											<td class="tm">
 												<!---------------------------------------------------------------------- row tablet option button -->
 												<div class="box-tools pull-right bt">
@@ -397,18 +360,17 @@
 											<div class="box box-info bsc">
 
 												<div class="box-header with-border">
-													<h3 class="box-title">Detalles del Producto</h3>
+													<h3 class="box-title">Detalles del Cliente</h3>
 												</div>
 
 												<div class="box-body">
-													<img src="../img/product-1.jpg" class="img_ver">
-													<p>Codigo: 3041</p>
-													<p>Nombre: amortiguador</p>
-													<p>Marca: monrroe</p>
-													<p>Departamento: tren delantero</p>
-													<p>Stock: 41</p>
-													<p>Precio: 12500</p>
-													<p>Descripcion: amortiguador tracero para caprice</p>
+													<p>Nombre: luis</p>
+													<p>Apellido: amortiguador</p>
+													<p>Cedula: 12345</p>
+													<p>Email: luis@mail.com</p>
+													<p>Direccion: calle los quintos</p>
+													<p>Telefono 1: 04105555555</p>
+													<p>Telefono 2: 04205555555</p>
 												</div>
 													<div class="col-md-12">
 														<div class="box-footer">
@@ -426,103 +388,66 @@
 											<div class="box box-info bsc">
 												<!---------------------------------------------------------------------- content row tablet collapsable button 2 header -->
 												<div class="box-header with-border">
-													<h3 class="box-title">Edicion del Producto</h3>
+													<h3 class="box-title">Editar Cliente</h3>
 												</div>
 												<!---------------------------------------------------------------------- /.content row tablet collapsable button 2 header -->
 												<!---------------------------------------------------------------------- content row tablet collapsable button 2 body -->
 												<div class="box-body">
 													<form class="form-horizontal">
 														<div class="col-md-6">
-
-															<div class="form-group">
-																<label for="" class="col-sm-2 control-label">Codigo</label>
-
-																<div class="col-sm-10">
-																	<input type="text" class="form-control" id="" placeholder="k8251">
-																</div>
-															</div>
 															<div class="form-group">
 																<label for="" class="col-sm-2 control-label">Nombre</label>
+																<div class="col-sm-10">
+																	<input type="text" class="form-control" id="" placeholder="luis">
+																</div>
+															</div>
+															<div class="form-group">
+																<label for="" class="col-sm-2 control-label">Apellido</label>
+																<div class="col-sm-10">
+																	<input type="text" class="form-control" id="" placeholder="gonzales">
+																</div>
+															</div>
+															<div class="form-group">
+																<label for="" class="col-sm-2 control-label">Cedula</label>
+																<div class="col-sm-10">
+																	<input type="text" class="form-control" id="" placeholder="12345">
+																</div>
+															</div>
+															<div class="form-group">
+																<label for="" class="col-sm-2 control-label">Email</label>
+																<div class="col-sm-10">
+																	<input type="email" class="form-control" id="" placeholder="luis@mail.com">
+																</div>
+															</div>
+															<div class="form-group">
+																<label for="" class="col-sm-2 control-label">Contraseña</label>
+																<div class="col-sm-10">
+																	<input type="password" class="form-control" id="" placeholder="******">
+																</div>
+															</div>
 
-																<div class="col-sm-10">
-																	<input type="text" class="form-control" id="" placeholder="muñon">
-																</div>
-															</div>
-															<div class="form-group">
-																<label for="" class="col-sm-2 control-label">Marca</label>
-																<div class="col-sm-10">
-																	<select class="form-control" onchange="habilitar1(this.value);">
-																		<option value="">Seleccione uno</option>
-																		<option>Moog</option>
-																		<option>Tinken</option>
-																		<option>Monroe</option>
-																		<option>Bosch</option>
-																		<option value="1">Nueva marca</option>
-																	</select>
-																</div>
-															</div>
-															<div class="form-group" id="prueba1" style="display: none">
-																<label for="" class="col-sm-2 control-label"></label>
-																<div class="col-sm-10">
-																	<input type="text" class="form-control" id="" placeholder="ingrese nueva marca">
-																</div>
-															</div>
-															<div class="form-group">
-																<label for="" class="col-sm-2 control-label">Departamento</label>
-																<div class="col-sm-10">
-																	<select class="form-control" onchange="habilitar2(this.value);">
-																		<option>Seleccione uno</option>
-																		<option>Tren delantero</option>
-																		<option>Accesorios</option>
-																		<option>Partes electricas</option>
-																		<option>Frenos</option>
-																		<option value="1">Nuevo departamento</option>
-																	</select>
-																</div>
-															</div>
-															<div class="form-group" id="prueba2" style="display: none">
-																<label for="" class="col-sm-2 control-label"></label>
-																<div class="col-sm-10">
-																	<input type="text" class="form-control" id="" placeholder="ingrese nuevo departamento">
-																</div>
-															</div>
-															<div class="form-group">
-																<label for="" class="col-sm-2 control-label">Vehiculos</label>
-
-																<div class="col-sm-10">
-																	<input type="text" class="form-control" id="" placeholder="malibu">
-																</div>
-															</div>
 														</div>
 														<div class="col-md-6">
 															<div class="form-group">
-																<label for="" class="col-sm-2 control-label">Stock</label>
-
+																<label for="" class="col-sm-2 control-label">Direccion</label>
 																<div class="col-sm-10">
-																	<input type="number" class="form-control" id="" placeholder="41">
+																	<input type="text" class="form-control" id="" placeholder="calla los quintos">
 																</div>
 															</div>
 															<div class="form-group">
-																<label for="" class="col-sm-2 control-label">Precio</label>
-
+																<label for="" class="col-sm-2 control-label">Telefono 1</label>
 																<div class="col-sm-10">
-																	<input type="number" step="0.01" class="form-control" id="" placeholder="12500">
+																	<input type="number" class="form-control" id="" placeholder="0410555555">
 																</div>
 															</div>
 															<div class="form-group">
-																<label for="" class="col-sm-2 control-label">Descripcion</label>
-
+																<label for="" class="col-sm-2 control-label">Telefono 2</label>
 																<div class="col-sm-10">
-																	<textarea class="form-control" rows="5" id="" placeholder="amortiguador tracero para caprice"></textarea>
-																</div>
-															</div>
-															<div class="form-group">
-																<label for="" class="col-sm-2 control-label">Cargar imagen</label>
-																<div class="col-sm-10">
-																	<input  id="input-24" name="input24[]" type="file" multiple>
+																	<input type="number" class="form-control" id="" placeholder="04205555555">
 																</div>
 															</div>
 														</div>
+
 														<!---------------------------------------------------------------------- content row tablet collapsable button 2 button -->
 														<div class="col-md-12 col-xs-12">
 															<div class="box-footer">
@@ -540,26 +465,26 @@
 								</div>
 								<!-------------------------------------------------------------------------------------- /.content row tablet collapsable button 2 -->
 								<!-------------------------------------------------------------------------------------- content row tablet collapsable button 3 -->
+						<!-------------------------------------------------------------------------------------- /.content row tablet collapsable button 2 -->
+								<!-------------------------------------------------------------------------------------- content row tablet collapsable button 3 -->
 								<div id="box-widget-eliminar-1" class="box-body">
 									<div class="border dt">
 										<div class="row">
 											<div class="box box-info bsc">
 												<!---------------------------------------------------------------------- content row tablet collapsable button 3 header -->
 												<div class="box-header with-border">
-													<h3 class="box-title">Eliminar Producto</h3>
+													<h3 class="box-title">Eliminar Cliente</h3>
 												</div>
 												<!---------------------------------------------------------------------- /.content row tablet collapsable button 3 header -->
 												<!---------------------------------------------------------------------- content row tablet collapsable button 3 body -->
 												<div class="box-body">
-													<img src="../img/product-1.jpg" class="img_ver">
-													<p>Codigo: 3041</p>
-													<p>Nombre: amortiguador</p>
-													<p>Marca: monrroe</p>
-													<p>Departamento: tren delantero</p>
-													<p>Stock: 41</p>
-													<p>Precio: 12500</p>
-													<p>Descripcion: amortiguador tracero para caprice</p>
-
+													<p>Nombre: luis</p>
+													<p>Apellido: amortiguador</p>
+													<p>Cedula: 12345</p>
+													<p>Email: luis@mail.com</p>
+													<p>Direccion: calle los quintos</p>
+													<p>Telefono 1: 04105555555</p>
+													<p>Telefono 2: 04205555555</p>
 												</div>
 												<!---------------------------------------------------------------------- /.content row tablet collapsable button 3 header -->
 												<!---------------------------------------------------------------------- content row tablet collapsable button 3 button -->
@@ -608,7 +533,7 @@
 
 
 
-
+	
 
 
 	<!------------------------------------------------------------------------------------------------------------------ footer -->
@@ -731,36 +656,6 @@
 		});
 	</script>
 
-
-
-
-
-	<script>
-		function habilitar1(value)
-		{
-			if(value=="1" && value==true)
-			{
-				// habilitamos
-				document.getElementById("prueba1").style.display="block";
-			}else if(value!="1" || value==false){
-				// deshabilitamos
-				document.getElementById("prueba1").style.display="none";
-			}
-		}
-	</script>
-	<script>
-		function habilitar2(value)
-		{
-			if(value=="1" && value==true)
-			{
-				// habilitamos
-				document.getElementById("prueba2").style.display="block";
-			}else if(value!="1" || value==false){
-				// deshabilitamos
-				document.getElementById("prueba2").style.display="none";
-			}
-		}
-	</script>
 	</div>
 	</body>
 	</html>

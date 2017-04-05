@@ -1,0 +1,12 @@
+diff a/.idea/workspace.xml b/.idea/workspace.xml	(rejected hunks)
+@@ -100,8 +100,8 @@
+   <component name="ProjectFrameBounds">
+     <option name="x" value="-4" />
+     <option name="y" value="-4" />
+-    <option name="width" value="1928" />
+-    <option name="height" value="1044" />
++    <option name="width" value="1374" />
++    <option name="height" value="732" />
+   </component>
+   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+     <OptionsSetting value="true" id="Add" />

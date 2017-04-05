@@ -143,3 +143,27 @@
     width: 100%;
     display: inline-block;
 }
+.img_ver{
+    float: right;
+    width: 180px;
+
+}
+.fr{
+   position: relative;
+    float: right;
+}
+.mp{
+    display: inline-blockblock !important;
+    box-shadow: none !important;
+    border-top: 0;
+    width: 100%;
+}
+.mg{
+    padding: 20px;
+}
+.sp{
+    margin-top: 10px;
+}
+.ct{
+    width: 100%;
+}

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Productos</title>
+	<title>Ventas</title>
 	<!-- Tell the browser to be responsive to screen width -->
 	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 	<!-- Bootstrap 3.3.6 -->
@@ -191,7 +191,7 @@
 			</h1>
 			<ol class="breadcrumb">
 				<li><a href="index.html"><i class="glyphicon glyphicon-home"></i> Inicio ></a></li>
-				<li><a href="productos.html"><i class="glyphicon glyphicon-th-large"></i> Productos</a></li>
+				<li><a href="ventas.html"><i class="glyphicon glyphicon-th-large"></i> Ventas</a></li>
 			</ol>
 		</section>
 		<!-------------------------------------------------------------------------------------------------------------- /.main content header>
@@ -204,7 +204,7 @@
 						<div class="box-header">
 							<div class="row">
 								<div class="col-xs-12 col-md-10">
-									<h3 class="box-title">Productos</h3>
+									<h3 class="box-title">Ventas</h3>
 								</div>
 								<div class="col-xs-12 col-md-2">
 									<div class="box-tools ap">
@@ -220,7 +220,7 @@
 									<div class="box box-default collapsed-box mp">
 										<div class="row mp sp">
 											<div class="box-tools pull-right col-md-12">
-												<button type="button" title="Añadir Producto" class="btn btn-info pull-right" data-id="2" data-operation="editar" data-widget="collapse">Nuevo Producto</button>
+												<button type="button" title="añadir Venta" class="btn btn-info pull-right" data-id="2" data-operation="editar" data-widget="collapse">Nueva Venta</button>
 											</div>
 										</div>
 										<div id="box-widget-editar-2" class="box-body">
@@ -229,102 +229,58 @@
 													<div class="box box-info bsc">
 														<!---------------------------------------------------------------------- content row tablet collapsable button 2 header -->
 														<div class="box-header with-border">
-															<h3 class="box-title">Nuevo Producto</h3>
+															<h3 class="box-title">Nueva Venta</h3>
 														</div>
 														<!---------------------------------------------------------------------- /.content row tablet collapsable button 2 header -->
 														<!---------------------------------------------------------------------- content row tablet collapsable button 2 body -->
 														<div class="box-body">
 															<form class="form-horizontal">
 																<div class="col-md-6">
-
 																	<div class="form-group">
-																		<label for="" class="col-sm-2 control-label">Codigo</label>
-
+																		<label for="" class="col-sm-2 control-label">Email Cliente</label>
 																		<div class="col-sm-10">
-																			<input type="text" class="form-control" id="" placeholder="ingrese el codigo">
+																			<input type="email" class="form-control" id="" placeholder="ingrese el email del cliente">
 																		</div>
 																	</div>
 																	<div class="form-group">
-																		<label for="" class="col-sm-2 control-label">Nombre</label>
-
+																		<label for="" class="col-sm-2 control-label">Direccion de Envio</label>
 																		<div class="col-sm-10">
-																			<input type="text" class="form-control" id="" placeholder="ingrese el nombre">
+																			<input type="text" class="form-control" id="" placeholder="ingrese la direccion de envio">
 																		</div>
 																	</div>
 																	<div class="form-group">
-																		<label for="" class="col-sm-2 control-label">Marca</label>
+																		<label for="" class="col-sm-2 control-label">Empresa de Envio</label>
 																		<div class="col-sm-10">
 																			<select class="form-control" onchange="habilitar1(this.value);">
 																				<option value="">Seleccione uno</option>
-																				<option>Moog</option>
-																				<option>Tinken</option>
-																				<option>Monroe</option>
-																				<option>Bosch</option>
-																				<option value="1">Nueva marca</option>
+																				<option>Zoom</option>
+																				<option>MRW</option>
+																				<option>Domesa</option>
+																				<option value="1">Nueva empresa de envio</option>
 																			</select>
 																		</div>
 																	</div>
 																	<div class="form-group" id="prueba1" style="display: none">
 																		<label for="" class="col-sm-2 control-label"></label>
 																		<div class="col-sm-10">
-																			<input type="text" class="form-control" id="" placeholder="ingrese nueva marca">
+																			<input type="text" class="form-control" id="" placeholder="ingrese nueva empresa de envio">
 																		</div>
 																	</div>
 																	<div class="form-group">
-																		<label for="" class="col-sm-2 control-label">Departamento</label>
+																		<label for="" class="col-sm-2 control-label">Estado de Venta</label>
 																		<div class="col-sm-10">
-																			<select class="form-control" onchange="habilitar2(this.value);">
+																			<select class="form-control">
 																				<option>Seleccione uno</option>
-																				<option>Tren delantero</option>
-																				<option>Accesorios</option>
-																				<option>Partes electricas</option>
-																				<option>Frenos</option>
-																				<option value="1">Nuevo departamento</option>
+																				<option>Esperando pago</option>
+																				<option>En ruta</option>
+																				<option>Finalizada</option>
+
 																			</select>
 																		</div>
 																	</div>
-																	<div class="form-group" id="prueba2" style="display: none">
-																		<label for="" class="col-sm-2 control-label"></label>
-																		<div class="col-sm-10">
-																			<input type="text" class="form-control" id="" placeholder="ingrese nuevo departamento">
-																		</div>
-																	</div>
-																	<div class="form-group">
-																		<label for="" class="col-sm-2 control-label">Vehiculos</label>
-
-																		<div class="col-sm-10">
-																			<input type="text" class="form-control" id="" placeholder="ingrese vehiculos">
-																		</div>
-																	</div>
 																</div>
-																<div class="col-md-6">
-																	<div class="form-group">
-																		<label for="" class="col-sm-2 control-label">Stock</label>
+																<div class="col-md-8">
 
-																		<div class="col-sm-10">
-																			<input type="number" class="form-control" id="" placeholder="ingrese el stock">
-																		</div>
-																	</div>
-																	<div class="form-group">
-																		<label for="" class="col-sm-2 control-label">Precio</label>
-
-																		<div class="col-sm-10">
-																			<input type="number" step="0.01" class="form-control" id="" placeholder="ingrese el precio">
-																		</div>
-																	</div>
-																	<div class="form-group">
-																		<label for="" class="col-sm-2 control-label">Descripcion</label>
-
-																		<div class="col-sm-10">
-																			<textarea class="form-control" rows="5" id="" placeholder="amortiguador tracero para caprice"></textarea>
-																		</div>
-																	</div>
-																	<div class="form-group">
-																		<label for="" class="col-sm-2 control-label">Cargar imagen</label>
-																		<div class="col-sm-10">
-																			<input  id="input-24" name="input24[]" type="file" multiple>
-																		</div>
-																	</div>
 																</div>
 																<!---------------------------------------------------------------------- content row tablet collapsable button 2 button -->
 																<div class="col-md-12 col-xs-12">
@@ -353,10 +309,10 @@
 							<!------------------------------------------------------------------------------------------ tablet header-->
 							<table class="table table-hover">
 								<tr>
-									<th class="tm">Codigo</th>
-									<th class="tm">Nombre</th>
-									<th class="tm">Stock</th>
-									<th class="tm">Precio</th>
+									<th class="tm">Clientes</th>
+									<th class="tm">Telefono</th>
+									<th class="tm">Estado de Venta</th>
+									<th class="tm">Monto</th>
 									<th class="tm">Opciones</th>
 								</tr>
 							</table>
@@ -367,9 +323,9 @@
 								<div class="box-header with-border sm">
 									<table class="table table-hover sm">
 										<tr>
-											<td class="tm">3041</td>
-											<td class="tm">amortiguador</td>
-											<td class="tm">41</td>
+											<td class="tm">luis@mail.com</td>
+											<td class="tm">04105555555</td>
+											<td class="tm">Finalizada</td>
 											<td class="tm">12500</td>
 											<td class="tm">
 												<!---------------------------------------------------------------------- row tablet option button -->
@@ -401,14 +357,40 @@
 												</div>
 
 												<div class="box-body">
-													<img src="../img/product-1.jpg" class="img_ver">
-													<p>Codigo: 3041</p>
-													<p>Nombre: amortiguador</p>
-													<p>Marca: monrroe</p>
-													<p>Departamento: tren delantero</p>
-													<p>Stock: 41</p>
-													<p>Precio: 12500</p>
-													<p>Descripcion: amortiguador tracero para caprice</p>
+													<p>Estado de la Venta: Finalizada</p>
+													<p>Email Cliente: luis@mail.com</p>
+													<p>Direccion de Envio: calle la quinta</p>
+													<p>Empresa de Envio: MRW</p>
+													<p>Fecha: 23 enero 2017</p>
+													<p>Monto Bs: 12500</p>
+													<div class="box-body table-responsive no-padding">
+														<!------------------------------------------------------------------------------------------ tablet header-->
+														<div class="box box-info bsc">
+															<!---------------------------------------------------------------------- content row tablet collapsable button 2 header -->
+															<div class="box-header with-border">
+																<h3 class="box-title">Productos</h3>
+															</div>
+															<!---------------------------------------------------------------------- /.content row tablet collapsable button 2 header -->
+															<!---------------------------------------------------------------------- content row tablet collapsable button 2 body -->
+															<div class="box-body">
+																<table class="table table-hover">
+																	<tr>
+																		<th class="tm">Codigo</th>
+																		<th class="tm">Nombre</th>
+																		<th class="tm">Stock</th>
+																		<th class="tm">Precio</th>
+																	</tr>
+																	<tr>
+																		<td class="tm">3041</td>
+																		<td class="tm">amortiguador</td>
+																		<td class="tm">41</td>
+																		<td class="tm">12500</td>
+																	</tr>
+																</table>
+															</div>
+														</div>
+													</div>
+														<!------------------------------------------------------------------------------------------ /.tablet header -->
 												</div>
 													<div class="col-md-12">
 														<div class="box-footer">
@@ -433,95 +415,51 @@
 												<div class="box-body">
 													<form class="form-horizontal">
 														<div class="col-md-6">
-
 															<div class="form-group">
-																<label for="" class="col-sm-2 control-label">Codigo</label>
-
+																<label for="" class="col-sm-2 control-label">Email Cliente</label>
 																<div class="col-sm-10">
-																	<input type="text" class="form-control" id="" placeholder="k8251">
+																	<input type="email" class="form-control" id="" placeholder="ingrese el email del cliente">
 																</div>
 															</div>
 															<div class="form-group">
-																<label for="" class="col-sm-2 control-label">Nombre</label>
-
+																<label for="" class="col-sm-2 control-label">Direccion de Envio</label>
 																<div class="col-sm-10">
-																	<input type="text" class="form-control" id="" placeholder="muñon">
+																	<input type="text" class="form-control" id="" placeholder="ingrese la direccion de envio">
 																</div>
 															</div>
 															<div class="form-group">
-																<label for="" class="col-sm-2 control-label">Marca</label>
+																<label for="" class="col-sm-2 control-label">Empresa de Envio</label>
 																<div class="col-sm-10">
 																	<select class="form-control" onchange="habilitar1(this.value);">
 																		<option value="">Seleccione uno</option>
-																		<option>Moog</option>
-																		<option>Tinken</option>
-																		<option>Monroe</option>
-																		<option>Bosch</option>
-																		<option value="1">Nueva marca</option>
+																		<option>Zoom</option>
+																		<option>MRW</option>
+																		<option>Domesa</option>
+																		<option value="1">Nueva empresa de envio</option>
 																	</select>
 																</div>
 															</div>
 															<div class="form-group" id="prueba1" style="display: none">
 																<label for="" class="col-sm-2 control-label"></label>
 																<div class="col-sm-10">
-																	<input type="text" class="form-control" id="" placeholder="ingrese nueva marca">
+																	<input type="text" class="form-control" id="" placeholder="ingrese nueva empresa de envio">
 																</div>
 															</div>
 															<div class="form-group">
-																<label for="" class="col-sm-2 control-label">Departamento</label>
+																<label for="" class="col-sm-2 control-label">Estado de Venta</label>
 																<div class="col-sm-10">
-																	<select class="form-control" onchange="habilitar2(this.value);">
+																	<select class="form-control">
 																		<option>Seleccione uno</option>
-																		<option>Tren delantero</option>
-																		<option>Accesorios</option>
-																		<option>Partes electricas</option>
-																		<option>Frenos</option>
-																		<option value="1">Nuevo departamento</option>
+																		<option>Esperando pago</option>
+																		<option>En ruta</option>
+																		<option>Finalizada</option>
+
 																	</select>
 																</div>
 															</div>
-															<div class="form-group" id="prueba2" style="display: none">
-																<label for="" class="col-sm-2 control-label"></label>
-																<div class="col-sm-10">
-																	<input type="text" class="form-control" id="" placeholder="ingrese nuevo departamento">
-																</div>
-															</div>
-															<div class="form-group">
-																<label for="" class="col-sm-2 control-label">Vehiculos</label>
-
-																<div class="col-sm-10">
-																	<input type="text" class="form-control" id="" placeholder="malibu">
-																</div>
-															</div>
 														</div>
-														<div class="col-md-6">
-															<div class="form-group">
-																<label for="" class="col-sm-2 control-label">Stock</label>
+														<div class="col-md-8">
 
-																<div class="col-sm-10">
-																	<input type="number" class="form-control" id="" placeholder="41">
-																</div>
-															</div>
-															<div class="form-group">
-																<label for="" class="col-sm-2 control-label">Precio</label>
-
-																<div class="col-sm-10">
-																	<input type="number" step="0.01" class="form-control" id="" placeholder="12500">
-																</div>
-															</div>
-															<div class="form-group">
-																<label for="" class="col-sm-2 control-label">Descripcion</label>
-
-																<div class="col-sm-10">
-																	<textarea class="form-control" rows="5" id="" placeholder="amortiguador tracero para caprice"></textarea>
-																</div>
-															</div>
-															<div class="form-group">
-																<label for="" class="col-sm-2 control-label">Cargar imagen</label>
-																<div class="col-sm-10">
-																	<input  id="input-24" name="input24[]" type="file" multiple>
-																</div>
-															</div>
 														</div>
 														<!---------------------------------------------------------------------- content row tablet collapsable button 2 button -->
 														<div class="col-md-12 col-xs-12">
@@ -551,14 +489,12 @@
 												<!---------------------------------------------------------------------- /.content row tablet collapsable button 3 header -->
 												<!---------------------------------------------------------------------- content row tablet collapsable button 3 body -->
 												<div class="box-body">
-													<img src="../img/product-1.jpg" class="img_ver">
-													<p>Codigo: 3041</p>
-													<p>Nombre: amortiguador</p>
-													<p>Marca: monrroe</p>
-													<p>Departamento: tren delantero</p>
-													<p>Stock: 41</p>
-													<p>Precio: 12500</p>
-													<p>Descripcion: amortiguador tracero para caprice</p>
+													<p>Estado de la Compra: Finalizada</p>
+													<p>Email Cliente: luis@mail.com</p>
+													<p>Direccion de Envio: calle la quinta</p>
+													<p>Empresa de Envio: MRW</p>
+													<p>Fecha: 23 enero 2017</p>
+													<p>Monto Bs: 12500</p>
 
 												</div>
 												<!---------------------------------------------------------------------- /.content row tablet collapsable button 3 header -->
@@ -608,7 +544,7 @@
 
 
 
-
+	
 
 
 	<!------------------------------------------------------------------------------------------------------------------ footer -->
