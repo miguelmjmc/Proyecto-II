@@ -121,7 +121,7 @@
 			<!-- search form -->
 			<form action="#" method="get" class="sidebar-form">
 				<div class="input-group">
-					<input type="text" name="q" class="form-control" placeholder="Buscar...">
+					<input type="text" name="" class="form-control" placeholder="buscar...">
               <span class="input-group-btn">
                 <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
 				</button>
@@ -238,23 +238,23 @@
 																<div class="col-md-6">
 
 																	<div class="form-group">
-																		<label for="" class="col-sm-2 control-label">Codigo</label>
+																		<label for="i1" class="col-sm-2 control-label">Codigo</label>
 
 																		<div class="col-sm-10">
-																			<input type="text" class="form-control" id="" placeholder="ingrese el codigo">
+																			<input type="text" class="form-control" id="i1" placeholder="ingrese el codigo" title="ingrese el codigo" required>
 																		</div>
 																	</div>
 																	<div class="form-group">
-																		<label for="" class="col-sm-2 control-label">Nombre</label>
+																		<label for="i2" class="col-sm-2 control-label">Nombre</label>
 
 																		<div class="col-sm-10">
-																			<input type="text" class="form-control" id="" placeholder="ingrese el nombre">
+																			<input type="text" class="form-control" id="i2" placeholder="ingrese el nombre" title="ingrese el nombre" required >
 																		</div>
 																	</div>
 																	<div class="form-group">
-																		<label for="" class="col-sm-2 control-label">Marca</label>
+																		<label for="selec1" class="col-sm-2 control-label">Marca Producto</label>
 																		<div class="col-sm-10">
-																			<select class="form-control" onchange="habilitar1(this.value);">
+																			<select class="form-control" onchange="habilitar1(this.value);" id="selec1" title="seleccione una marca" required>
 																				<option value="">Seleccione uno</option>
 																				<option>Moog</option>
 																				<option>Tinken</option>
@@ -267,13 +267,13 @@
 																	<div class="form-group" id="prueba1" style="display: none">
 																		<label for="" class="col-sm-2 control-label"></label>
 																		<div class="col-sm-10">
-																			<input type="text" class="form-control" id="" placeholder="ingrese nueva marca">
+																			<input type="text" class="form-control" id="" placeholder="ingrese nueva marca" title="ingrese nueva marca">
 																		</div>
 																	</div>
 																	<div class="form-group">
-																		<label for="" class="col-sm-2 control-label">Departamento</label>
+																		<label for="selec2" class="col-sm-2 control-label">Departamento del Producto</label>
 																		<div class="col-sm-10">
-																			<select class="form-control" onchange="habilitar2(this.value);">
+																			<select class="form-control" onchange="habilitar2(this.value);" id="selec2" title="seleccione un departamento" required>
 																				<option>Seleccione uno</option>
 																				<option>Tren delantero</option>
 																				<option>Accesorios</option>
@@ -290,47 +290,47 @@
 																		</div>
 																	</div>
 																	<div class="form-group">
-																		<label for="" class="col-sm-2 control-label">Vehiculos</label>
+																		<label for="i3" class="col-sm-2 control-label">Vehiculos</label>
 
 																		<div class="col-sm-10">
-																			<input type="text" class="form-control" id="" placeholder="ingrese vehiculos">
+																			<input type="text" class="form-control" id="i3" placeholder="ingrese vehiculos" title="ingrese vehiculos" required>
 																		</div>
 																	</div>
 																</div>
 																<div class="col-md-6">
 																	<div class="form-group">
-																		<label for="" class="col-sm-2 control-label">Stock</label>
+																		<label for="i4" class="col-sm-2 control-label">Stock</label>
 
 																		<div class="col-sm-10">
-																			<input type="number" class="form-control" id="" placeholder="ingrese el stock">
+																			<input type="number" class="form-control" id="i4" placeholder="ingrese el stock" title="ingrese el stock" required>
 																		</div>
 																	</div>
 																	<div class="form-group">
-																		<label for="" class="col-sm-2 control-label">Precio</label>
+																		<label for="i5" class="col-sm-2 control-label">Precio</label>
 
 																		<div class="col-sm-10">
-																			<input type="number" step="0.01" class="form-control" id="" placeholder="ingrese el precio">
+																			<input type="number" step="0.01" class="form-control" id="i5" placeholder="ingrese el precio" title="ingrese el precio" required>
 																		</div>
 																	</div>
 																	<div class="form-group">
-																		<label for="" class="col-sm-2 control-label">Descripcion</label>
+																		<label for="i6" class="col-sm-2 control-label">Descripcion</label>
 
 																		<div class="col-sm-10">
-																			<textarea class="form-control" rows="5" id="" placeholder="amortiguador tracero para caprice"></textarea>
+																			<textarea class="form-control" rows="5" id="i6" placeholder="amortiguador tracero para caprice" title="descripcion" required></textarea>
 																		</div>
 																	</div>
 																	<div class="form-group">
-																		<label for="" class="col-sm-2 control-label">Cargar imagen</label>
+																		<label for="input-24" class="col-sm-2 control-label">Cargar imagen</label>
 																		<div class="col-sm-10">
-																			<input  id="input-24" name="input24[]" type="file" multiple>
+																			<input  id="input-24" name="input24[]" type="file" multiple title="cargar imagen" required>
 																		</div>
 																	</div>
 																</div>
 																<!---------------------------------------------------------------------- content row tablet collapsable button 2 button -->
 																<div class="col-md-12 col-xs-12">
 																	<div class="box-footer">
-																		<button type="submit" class="btn btn-info pull-right" formaction="productos.html">Guardar</button>
-																		<button type="submit" class="btn btn-default mr" formaction="productos.html">Cancelar</button>
+																		<button type="submit" class="btn btn-info pull-right" formaction="productos.html" title="guardar">Guardar</button>
+																		<button type="submit" class="btn btn-default mr" formaction="productos.html" title="cancelar">Cancelar</button>
 																	</div>
 																</div>
 																<!---------------------------------------------------------------------- ./content row tablet collapsable button 2 button -->
@@ -410,12 +410,14 @@
 													<p>Precio: 12500</p>
 													<p>Descripcion: amortiguador tracero para caprice</p>
 												</div>
+												<form class="form-horizontal">
 													<div class="col-md-12">
 														<div class="box-footer">
-															<button type="submit" class="btn btn-default fr" formaction="productos.html">Cerrar</button>
+															<button type="submit" class="btn btn-default fr" formaction="productos.html" title="cerrar">Cerrar</button>
 														</div>
 														<!-- /.box-footer -->
 													</div>
+												</form>
 											</div>
 										</div>
 									</div>
@@ -435,23 +437,23 @@
 														<div class="col-md-6">
 
 															<div class="form-group">
-																<label for="" class="col-sm-2 control-label">Codigo</label>
+																<label for="i7" class="col-sm-2 control-label">Codigo</label>
 
 																<div class="col-sm-10">
-																	<input type="text" class="form-control" id="" placeholder="k8251">
+																	<input type="text" class="form-control" id="i7" placeholder="k8251">
 																</div>
 															</div>
 															<div class="form-group">
-																<label for="" class="col-sm-2 control-label">Nombre</label>
+																<label for="i8" class="col-sm-2 control-label">Nombre</label>
 
 																<div class="col-sm-10">
-																	<input type="text" class="form-control" id="" placeholder="muñon">
+																	<input type="text" class="form-control" id="i8" placeholder="muñon">
 																</div>
 															</div>
 															<div class="form-group">
-																<label for="" class="col-sm-2 control-label">Marca</label>
+																<label for="selec3" class="col-sm-2 control-label">Marca</label>
 																<div class="col-sm-10">
-																	<select class="form-control" onchange="habilitar1(this.value);">
+																	<select class="form-control" id="selec3" onchange="habilitar1(this.value);">
 																		<option value="">Seleccione uno</option>
 																		<option>Moog</option>
 																		<option>Tinken</option>
@@ -464,13 +466,13 @@
 															<div class="form-group" id="prueba1" style="display: none">
 																<label for="" class="col-sm-2 control-label"></label>
 																<div class="col-sm-10">
-																	<input type="text" class="form-control" id="" placeholder="ingrese nueva marca">
+																	<input type="text" class="form-control" id="" placeholder="ingrese nueva marca" title="ingrese nueva marca">
 																</div>
 															</div>
 															<div class="form-group">
-																<label for="" class="col-sm-2 control-label">Departamento</label>
+																<label for="selec4" class="col-sm-2 control-label">Departamento</label>
 																<div class="col-sm-10">
-																	<select class="form-control" onchange="habilitar2(this.value);">
+																	<select class="form-control" id="selec4" onchange="habilitar2(this.value);">
 																		<option>Seleccione uno</option>
 																		<option>Tren delantero</option>
 																		<option>Accesorios</option>
@@ -483,41 +485,41 @@
 															<div class="form-group" id="prueba2" style="display: none">
 																<label for="" class="col-sm-2 control-label"></label>
 																<div class="col-sm-10">
-																	<input type="text" class="form-control" id="" placeholder="ingrese nuevo departamento">
+																	<input type="text" class="form-control" id="" placeholder="ingrese nuevo departamento" title="ingrese nuevo departamento">
 																</div>
 															</div>
 															<div class="form-group">
-																<label for="" class="col-sm-2 control-label">Vehiculos</label>
+																<label for="i9" class="col-sm-2 control-label">Vehiculos</label>
 
 																<div class="col-sm-10">
-																	<input type="text" class="form-control" id="" placeholder="malibu">
+																	<input type="text" class="form-control" id="i9" placeholder="malibu">
 																</div>
 															</div>
 														</div>
 														<div class="col-md-6">
 															<div class="form-group">
-																<label for="" class="col-sm-2 control-label">Stock</label>
+																<label for="i10" class="col-sm-2 control-label">Stock</label>
 
 																<div class="col-sm-10">
-																	<input type="number" class="form-control" id="" placeholder="41">
+																	<input type="number" class="form-control" id="i10" placeholder="41">
 																</div>
 															</div>
 															<div class="form-group">
-																<label for="" class="col-sm-2 control-label">Precio</label>
+																<label for="i11" class="col-sm-2 control-label">Precio</label>
 
 																<div class="col-sm-10">
-																	<input type="number" step="0.01" class="form-control" id="" placeholder="12500">
+																	<input type="number" step="0.01" class="form-control" id="i11" placeholder="12500">
 																</div>
 															</div>
 															<div class="form-group">
-																<label for="" class="col-sm-2 control-label">Descripcion</label>
+																<label for="i12" class="col-sm-2 control-label">Descripcion</label>
 
 																<div class="col-sm-10">
-																	<textarea class="form-control" rows="5" id="" placeholder="amortiguador tracero para caprice"></textarea>
+																	<textarea class="form-control" rows="5" id="i12" placeholder="amortiguador tracero para caprice"></textarea>
 																</div>
 															</div>
 															<div class="form-group">
-																<label for="" class="col-sm-2 control-label">Cargar imagen</label>
+																<label for="input-24" class="col-sm-2 control-label">Cargar imagen</label>
 																<div class="col-sm-10">
 																	<input  id="input-24" name="input24[]" type="file" multiple>
 																</div>
@@ -526,8 +528,8 @@
 														<!---------------------------------------------------------------------- content row tablet collapsable button 2 button -->
 														<div class="col-md-12 col-xs-12">
 															<div class="box-footer">
-																<button type="submit" class="btn btn-info pull-right" formaction="productos.html">Guardar</button>
-																<button type="submit" class="btn btn-default mr" formaction="productos.html">Cancelar</button>
+																<button type="submit" class="btn btn-info pull-right" formaction="productos.html" title="guardar">Guardar</button>
+																<button type="submit" class="btn btn-default mr" formaction="productos.html" title="cancelar">Cancelar</button>
 															</div>
 														</div>
 														<!---------------------------------------------------------------------- ./content row tablet collapsable button 2 button -->
@@ -566,8 +568,8 @@
 												<form class="form-horizontal">
 													<div class="col-md-12">
 														<div class="box-footer">
-															<button type="submit" class="btn btn-info pull-right co" formaction="productos.html">Eliminar</button>
-															<button type="submit" class="btn btn-default mr"formaction="productos.html">Cancelar</button>
+															<button type="submit" class="btn btn-info pull-right co" formaction="productos.html" title="eliminar">Eliminar</button>
+															<button type="submit" class="btn btn-default mr"formaction="productos.html" title="cancelar">Cancelar</button>
 
 														</div>
 														<!-- /.box-footer -->

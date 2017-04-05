@@ -167,3 +167,22 @@
 .ct{
     width: 100%;
 }
+
+.navbar {
+    background-color: #1abc9c !important;
+}
+.skin-blue .main-header .logo {
+    background-color: #189881 !important;
+}
+.sidebar-toggle:hover{
+    background-color: #189881 !important;
+}
+.user-header{
+
+    background-color: #1abc9c !important;
+}
+.btn-info{
+    background-color: #1abc9c !important;
+    border-color:  #189881 !important;
+
+}

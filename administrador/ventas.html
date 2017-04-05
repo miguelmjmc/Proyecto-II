@@ -237,21 +237,21 @@
 															<form class="form-horizontal">
 																<div class="col-md-6">
 																	<div class="form-group">
-																		<label for="" class="col-sm-2 control-label">Email Cliente</label>
+																		<label for="i1" class="col-sm-2 control-label">Email Cliente</label>
 																		<div class="col-sm-10">
-																			<input type="email" class="form-control" id="" placeholder="ingrese el email del cliente">
+																			<input type="email" class="form-control" id="i1" placeholder="ingrese el email del cliente" title="ingrese el email del cliente" required>
 																		</div>
 																	</div>
 																	<div class="form-group">
-																		<label for="" class="col-sm-2 control-label">Direccion de Envio</label>
+																		<label for="i2" class="col-sm-2 control-label">Direccion de Envio</label>
 																		<div class="col-sm-10">
-																			<input type="text" class="form-control" id="" placeholder="ingrese la direccion de envio">
+																			<input type="text" class="form-control" id="i2" placeholder="ingrese la direccion de envio" title="ingrese la direccion de envio" required>
 																		</div>
 																	</div>
 																	<div class="form-group">
-																		<label for="" class="col-sm-2 control-label">Empresa de Envio</label>
+																		<label for="select1" class="col-sm-2 control-label">Empresa de Envio</label>
 																		<div class="col-sm-10">
-																			<select class="form-control" onchange="habilitar1(this.value);">
+																			<select class="form-control" id="select1" title="seleccione empresa de envio" onchange="habilitar1(this.value);">
 																				<option value="">Seleccione uno</option>
 																				<option>Zoom</option>
 																				<option>MRW</option>
@@ -267,9 +267,9 @@
 																		</div>
 																	</div>
 																	<div class="form-group">
-																		<label for="" class="col-sm-2 control-label">Estado de Venta</label>
+																		<label for="select2" class="col-sm-2 control-label">Estado de Venta</label>
 																		<div class="col-sm-10">
-																			<select class="form-control">
+																			<select class="form-control" id="select2" title="seleccione estado de la venta" required>
 																				<option>Seleccione uno</option>
 																				<option>Esperando pago</option>
 																				<option>En ruta</option>
@@ -285,8 +285,8 @@
 																<!---------------------------------------------------------------------- content row tablet collapsable button 2 button -->
 																<div class="col-md-12 col-xs-12">
 																	<div class="box-footer">
-																		<button type="submit" class="btn btn-info pull-right" formaction="productos.html">Guardar</button>
-																		<button type="submit" class="btn btn-default mr" formaction="productos.html">Cancelar</button>
+																		<button type="submit" class="btn btn-info pull-right" formaction="ventas.html" title="guardar">Guardar</button>
+																		<button type="submit" class="btn btn-default mr" formaction="ventas.html" title="cancelar">Cancelar</button>
 																	</div>
 																</div>
 																<!---------------------------------------------------------------------- ./content row tablet collapsable button 2 button -->
@@ -392,12 +392,14 @@
 													</div>
 														<!------------------------------------------------------------------------------------------ /.tablet header -->
 												</div>
+												<form class="form-horizontal">
 													<div class="col-md-12">
 														<div class="box-footer">
-															<button type="submit" class="btn btn-default fr" formaction="productos.html">Cerrar</button>
+															<button type="submit" class="btn btn-default fr" formaction="ventas.html" title="crrar">Cerrar</button>
 														</div>
 														<!-- /.box-footer -->
 													</div>
+												</form>
 											</div>
 										</div>
 									</div>
@@ -416,21 +418,21 @@
 													<form class="form-horizontal">
 														<div class="col-md-6">
 															<div class="form-group">
-																<label for="" class="col-sm-2 control-label">Email Cliente</label>
+																<label for="i3" class="col-sm-2 control-label">Email Cliente</label>
 																<div class="col-sm-10">
-																	<input type="email" class="form-control" id="" placeholder="ingrese el email del cliente">
+																	<input type="email" class="form-control" id="i3" placeholder="ingrese el email del cliente" title="ingrse el email del cliente">
 																</div>
 															</div>
 															<div class="form-group">
-																<label for="" class="col-sm-2 control-label">Direccion de Envio</label>
+																<label for="i4" class="col-sm-2 control-label">Direccion de Envio</label>
 																<div class="col-sm-10">
-																	<input type="text" class="form-control" id="" placeholder="ingrese la direccion de envio">
+																	<input type="text" class="form-control" id="i4" placeholder="ingrese la direccion de envio" title="ingrese la direccion de envio">
 																</div>
 															</div>
 															<div class="form-group">
-																<label for="" class="col-sm-2 control-label">Empresa de Envio</label>
+																<label for="select3" class="col-sm-2 control-label">Empresa de Envio</label>
 																<div class="col-sm-10">
-																	<select class="form-control" onchange="habilitar1(this.value);">
+																	<select class="form-control" id="select3" title="seleccione la empresa de envio" onchange="habilitar1(this.value);">
 																		<option value="">Seleccione uno</option>
 																		<option>Zoom</option>
 																		<option>MRW</option>
@@ -446,9 +448,9 @@
 																</div>
 															</div>
 															<div class="form-group">
-																<label for="" class="col-sm-2 control-label">Estado de Venta</label>
+																<label for="select4" class="col-sm-2 control-label">Estado de Venta</label>
 																<div class="col-sm-10">
-																	<select class="form-control">
+																	<select class="form-control" id="select4" title="seleccione estado de la compra">
 																		<option>Seleccione uno</option>
 																		<option>Esperando pago</option>
 																		<option>En ruta</option>
@@ -464,8 +466,8 @@
 														<!---------------------------------------------------------------------- content row tablet collapsable button 2 button -->
 														<div class="col-md-12 col-xs-12">
 															<div class="box-footer">
-																<button type="submit" class="btn btn-info pull-right" formaction="productos.html">Guardar</button>
-																<button type="submit" class="btn btn-default mr" formaction="productos.html">Cancelar</button>
+																<button type="submit" class="btn btn-info pull-right" formaction="ventas.html" title="guardar">Guardar</button>
+																<button type="submit" class="btn btn-default mr" formaction="ventas.html" title="cancelar">Cancelar</button>
 															</div>
 														</div>
 														<!---------------------------------------------------------------------- ./content row tablet collapsable button 2 button -->
@@ -502,8 +504,8 @@
 												<form class="form-horizontal">
 													<div class="col-md-12">
 														<div class="box-footer">
-															<button type="submit" class="btn btn-info pull-right co" formaction="productos.html">Eliminar</button>
-															<button type="submit" class="btn btn-default mr"formaction="productos.html">Cancelar</button>
+															<button type="submit" class="btn btn-info pull-right co" formaction="ventas.html" title="eliminar">Eliminar</button>
+															<button type="submit" class="btn btn-default mr"formaction="ventas.html" title="cancelar">Cancelar</button>
 
 														</div>
 														<!-- /.box-footer -->
